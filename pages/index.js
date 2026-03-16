@@ -8,7 +8,4 @@ export class Index {
     await this.page.goto(this.url);
   }
 
-  async openProduct(productName) {
-    await this.page.getByRole("link", { name: productName }).click();
-  }
 }

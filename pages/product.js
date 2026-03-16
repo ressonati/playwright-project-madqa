@@ -18,4 +18,8 @@ export class Product {
     await this.expectOpened(testedProduct);
     await this.buyButton.click();
   }
+
+    async openProduct(productName) {
+    await this.page.getByRole("link", { name: productName }).click();
+  }
 }

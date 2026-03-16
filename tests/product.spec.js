@@ -15,7 +15,7 @@ test("Buy product - keyboard", async ({ page }) => {
   const cart = new Cart(page);
 
   await index.open();
-  await index.openProduct(testedProduct.name);
+  await product.openProduct(testedProduct.name);
   await product.expectOpened(testedProduct);
   await product.addToCart(testedProduct);
   await cart.openCart();
