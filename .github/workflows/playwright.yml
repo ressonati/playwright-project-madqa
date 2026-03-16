@@ -25,10 +25,11 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-
-      USER: ${{secrets.USER}}
-
-      PASSWORD: ${{ secrets.PASSWORD }}
+      CI: true
+      USER1: ${{ secrets.USER1 }}
+      PASSWORD1: ${{ secrets.PASSWORD1 }}
+      USER2: ${{ secrets.USER2 }}
+      PASSWORD2: ${{ secrets.PASSWORD2 }}
 
     steps:
 
